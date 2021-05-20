@@ -1,0 +1,348 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Train+One&display=swap);
+* {
+    margin:0;
+    padding: 0;
+    
+    box-sizing:content-box;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    
+}
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin:auto;
+    background: url(../img/couverture2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;    
+   
+}
+
+
+
+.toppage {
+    min-height: 100vh;
+    
+
+}
+li {
+    list-style: none;
+}
+header {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display:flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.logo {
+    width: 200px;
+    transition: transform 0.4s;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li.main-nav {
+    margin: 40px;
+    
+}
+.nav-links a.main-link, .menu1 {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    position:relative;
+    display: block;
+    transition: transform 0.4s;
+    font-family: 'Train One', cursive;
+}
+.nav-links a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+}
+.nav-links a:hover {
+    color: #fbff02;
+    transform: translateY(-20%);
+}
+.logo:hover {
+    transform: translateY(5%);
+}
+
+.icone {
+
+    margin-left: 170vh;
+    transition: transform 0.4s;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    padding-left:100px ;
+
+}
+.cart {
+    font-family:'Train One', cursive;
+    position: relative;
+    color:white;
+    margin-top: 70px;
+    margin-right: 50px;
+    transition: transform 0.4s;
+}
+.login {
+    position: relative;
+    color: white;
+    transition: transform 0.4s;
+}
+.icone .cart:hover {
+    color: #fbff02;
+    transform: translateY(-20%);
+}
+.login:hover {
+    color: #fbff02;
+    transform: translateY(-20%);
+}
+.landing {
+    line-height: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+.big-title {
+    color: #fbff02;
+    width: 40%;
+    font-size: 80px;
+    
+    font-weight: bold;
+    transition: transform 0.4s;
+}
+.sub-menu1 ul {
+
+    display: none;
+
+    margin-left:0 auto;
+
+    
+}
+.nav-links li:hover ul  {
+    cursor:pointer;
+    transition-delay: 2s;
+    position: absolute;
+    margin-left:0 auto;
+    display:grid;
+    
+    
+    }
+    .sub {
+        padding-top: 2px;
+        list-style: none;
+        padding:0;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        
+        margin-left: -50px;
+       padding-left: -10px;
+    }
+    .nav-links li:hover ul li .sub {
+        margin-left: 5px;
+        font-size: 10px;
+        
+    }
+
+    .menu1 {
+        display: flex
+
+    }
+    .titre {
+        margin-top: 20vh;
+        margin-left: 25%;
+        position: relative;
+        transition: transform 0.4s;
+        transition: color 0.5s;
+        color:#ffffff;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .cat {
+        
+        text-decoration: none;
+        position: relative;
+        transition: transform 0.4s;
+        transition: color 0.5s;
+        color:#ffffff;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .titre::before {
+        content: "";
+        width: 60px;
+        height: 5px;
+        margin-left: 10px;
+        border-radius:20px;
+        position: absolute;
+        background: #dfbd00;
+        bottom: 0px;
+        transition: background 0.5s;
+         }
+
+.titre .cat:hover {
+    color: #dfbd00;
+    transform: translateY(-20%);
+}
+.titre:hover::before {
+    background: white;
+}
+.images {
+    padding: 0 50px;
+    height: 10px;
+    margin-top: -100px;
+    
+    
+}
+
+.grid-plants {
+    background:#e98d1563;
+    
+    grid-gap: 30px;
+    margin-top: 2vh;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,300px);
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 55%;
+    padding: 20px 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.plant-grid1 {
+    
+    background: url(../img/sandwitch/chawarma.png);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.plant-grid2 {
+    
+    background: url(../img/sandwitch/escalope.png);
+    grid-column:  2/ 3;
+}
+
+.plant-grid3 {
+    
+    background: url(../img/sandwitch/cordonbleu.png);
+    grid-column: 3 / 4;
+}
+
+.plant-grid4 {
+    
+    background: url(../img/sandwitch/fromage.png);
+    grid-column: 1/2;
+    grid-row: 2 / 3;
+}
+.plant-grid5 {
+    
+    background: url(../img/sandwitch/jambon.png);
+    grid-column: 3/4;
+    grid-row: 2 / 3;
+}
+.plant-grid6 {
+    
+    background: url(../img/sandwitch/mexicain.png);
+    grid-column: 1/2;
+    grid-row:  3/ 4;
+}
+
+
+.plant-grid7 {
+    
+    background: url(../img/sandwitch/lebanese.png);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.plant-grid8 {
+    
+    background: url(../img/sandwitch/makloub.png);
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    
+}
+.plant-price {
+    font-weight: 300;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.plant-name {
+    margin-left: 2vh;
+    
+}
+.plant-bio {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background: #ebde279d;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+.plant-box::before {
+    content: "Commander";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ebde279d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%;
+    transition: bottom 0.4s;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.plant-box:hover::before {
+    bottom: 0;
+}
+footer {
+    margin-top: 65vh;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    
+}
+.copyright {
+    color:white
+}
+
+
+h4 {
+    margin-left: 9vh;
+    color: rgb(170, 170, 170);
+    }
