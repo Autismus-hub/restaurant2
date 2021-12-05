@@ -14,13 +14,13 @@
         <header>
             <img class="logo" src="img/logo.png" alt="">
             <ul class="nav-links">
-                <li class="main-nav"> <a class="main-link" href="acceuil.php#home">HOME</a> </li>
+                <li class="main-nav"> <a class="main-link" href="index.php#home">HOME</a> </li>
                 
                 <li class="main-nav "><a class="menu1" href="menu.php">MENU    
                 
                 </a>
                     
-                <li class="main-nav"><a class="main-link" href="acceuil.php#location">WHERE TO FIND US</a></li>
+                <li class="main-nav"><a class="main-link" href="index.php#location">WHERE TO FIND US</a></li>
                 <li class="main-nav"><a class="main-link" href="contact.php">CONTACT</a></li>
                 <li class="main-nav"><a class="main-link" href="https://www.facebook.com/profile.php?id=100066502178786" target="_blank">FOLLOW US</a></li>
             </ul>
