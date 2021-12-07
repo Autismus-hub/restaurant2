@@ -62,7 +62,7 @@
         </div>
 <div class="field">
                   <div class="field">
-                    <input type="text" name="mail" placeholder="Email Address" required>
+                    <input type="email" name="mail" placeholder="Email Address" required>
                   </div>
       <div class="field">
                     <input type="password" name="password" placeholder="Password" required>
