@@ -37,7 +37,7 @@
       <div class="form-inner">
                 <form action = "php/authentication.php" method = "POST" class="login">
                   <div class="field">
-                    <input type="text" name="text" placeholder="Email Address" required>
+                    <input type="email" name="text" placeholder="Email Address" required>
                   </div>
       <div class="field">
                     <input type="password" name="password" placeholder="Password" required>
